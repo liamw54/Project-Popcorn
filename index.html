@@ -1,0 +1,336 @@
+<!DOCTYPE HTML>
+<!--
+Popcorn Project
+Created by Jeff Wu, Liam White
+Index Page
+University of Portsmouth
+2018.01.11
+-->
+
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>Popcorn | Book Film Tickets</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./asset/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./asset/css/common.css" >
+    <link rel="stylesheet" type="text/css" href="./asset/css/index.css" >
+    <link rel="stylesheet" type="text/css" href="./asset/css/slider.css">
+    <script src="./js/scroll.js"></script>
+
+    <link rel="icon" href="./asset/img/favicon1.png" type="image/gif" sizes="16x16">
+
+    <script>
+
+      var isOpen = 0;
+      function openVideo(){
+
+        if(isOpen == 0){
+          document.getElementById("video_overlay").style.display = "block";
+          document.getElementById("video_overlay_player").style.display = "block";
+          isOpen = 1;
+        }else{
+          document.getElementById("video_overlay").style.display = "none";
+          document.getElementById("video_overlay_player").style.display = "none";
+          isOpen = 0;
+        }
+      }
+
+    </script>
+
+    <!--link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"-->
+
+  </head>
+
+  <h1 class='noLS'>Webpage currently unable to support landscape view.</h1>
+  <body>
+
+    <div class="video_overlay" id="video_overlay" onclick="openVideo()"></div>
+
+
+      <div class='vid_container' id="video_overlay_player">
+        <div class='insideoverlay' onclick="openVideo()"><img src='./asset/img/overlay_exit.png' alt='logo'></div>
+      <iframe width="1080" height="720" src="https://www.youtube.com/embed/52x5HJ9H8DM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+
+    <nav class='navBar'>
+
+      <div class='navBar_logo' id='logoBg'>
+        <img src = './asset/img/headlogo01.png' alt='logo' id='logo'>
+      </div>
+
+      <script src='./js/logohome.js'></script>
+
+      <div class='navBar_sBar'>
+        <input id='ssbar' type='text' onfocus="if(value=='&#xf002;  SEARCH') value = ''" onblur="if (this.value == '') (this.value='&#xf002;  SEARCH')" value='&#xf002;  SEARCH'>
+      </div>
+
+      <div class='navBar_text'>
+        <a href='#' onclick='openDialog()' id='navIn'>Sign In</a>
+        <a href='#' onclick='openDialog()' id='navUp'>Sign Up</a>
+        <a href='#' id='navUn'></a>
+        <a href='#' onclick='signOut()' id='navOut'>Sign Out</a>
+      </div>
+
+      <div class='navBar_mobile'>
+        <i class="fa fa-user" aria-hidden="true" onclick='openDialog()' id='navMBTN'></i>
+        <a class='navBar_mobile_Un' id='navMUN' onclick='signOut()'>Sign Out</a>
+      </div>
+
+    </nav>
+
+    <div class='slider w3-display-container'>
+      <div class='sInner'>
+        <img class="mySlides" src="./asset/img/slider1.jpg" alt='call of duty'>
+        <img class="mySlides" src="./asset/img/slider2.jpg" alt='overwatch'>
+        <img class="mySlides" src="./asset/img/slider3.jpg" alt=''>
+        <img class="mySlides" src="./asset/img/slider4.jpg" alt=''>
+      </div>
+
+      <!--a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+      <a class="w3-btn-floating w3-display-right" onclick="plusDivs(+1)">&#10095;</a-->
+
+        <!--a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+        <a class="w3-btn-floating w3-display-right" onclick="plusDivs(+1)">&#10095;</a-->
+    </div>
+
+
+
+    <div class=sInnerText>
+      <div class='sInnerTextH1' id = 'btx'>
+        <h1 class="myTexts">CALL OF DUTY</h1>
+        <h1 class="myTexts">OVERWATCH</h1>
+        <h1 class="myTexts">BATTLEFIELD 1</h1>
+        <h1 class="myTexts">Assassin's Creed IV</h1>
+      </div>
+
+      <div class='sInnerTextH3'>
+        <a class="myTextsH3">Infinite Warfare delivers three unique game modes:<br> Campaign returns to the gritty, large-scale war roots of the franchise, while boldly looking ahead. </a>
+        <a class="myTextsH3">In a time of global crisis, an international task force<br> of heroes banded together to restore peace to a war-torn world: OVERWATCH. </a>
+        <a class="myTextsH3">PLAY MORE MAPS, MORE WEAPONS, MORE BATTLEFIELD™ 1<br> Explore the battlefield with houses, tank, gas weapon in the period of World War I. </a>
+        <a class="myTextsH3">Ostensibly, this is to gather material for an Animus-powered<br> interactive feature film, but in reality, Abstergo and the Templars are searching for the Observatory</a>
+      </div>
+    </div>
+
+
+    <script src="./js/slider.js"></script>
+
+
+
+    <div class='content'>
+
+      <div class='content_title'>
+        <a class='ct ct_1'>NOW ON</a>
+        <img src='./asset/img/indicator.png' alt='image'>
+      </div>
+
+
+        <div class='content_video_list' id='cvl_1'>
+
+          <div class='vl_container vl1'>
+            <a href='./video.html'><img src='./asset/img/poster01.jpg' alt='image'></a><br>
+            <div class='vl_text'>
+              <a href='./video.html' class='vl_title'>Video Title</a><br>
+            </div>
+          </div>
+          <div class='vl_container vl1'>
+            <a href='./video.html'><img src='./asset/img/poster01.jpg' alt='image'></a><br>
+            <div class='vl_text'>
+              <a href='./video.html' class='vl_title'>Video Title</a><br>
+            </div>
+          </div>
+          <div class='vl_container vl1'>
+            <a href='./video.html'><img src='./asset/img/poster01.jpg' alt='image'></a><br>
+            <div class='vl_text'>
+              <a href='./video.html' class='vl_title'>Video Title</a><br>
+            </div>
+          </div>
+          <div class='vl_container vl1'>
+            <a href='./video.html'><img src='./asset/img/poster01.jpg' alt='image'></a><br>
+            <div class='vl_text'>
+              <a href='./video.html' class='vl_title'>Video Title</a><br>
+            </div>
+          </div>
+
+
+    </div>
+
+
+    <div class='content_video_list' id='cvl_2'>
+
+      <div class='vl_container vl1'>
+        <a href='./video.html'><img src='./asset/img/poster01.jpg' alt='image'></a><br>
+        <div class='vl_text'>
+          <a href='./video.html' class='vl_title'>Video Title</a><br>
+        </div>
+      </div>
+      <div class='vl_container vl1'>
+        <a href='./video.html'><img src='./asset/img/poster01.jpg' alt='image'></a><br>
+        <div class='vl_text'>
+          <a href='./video.html' class='vl_title'>Video Title</a><br>
+        </div>
+      </div><div class='vl_container vl1'>
+        <a href='./video.html'><img src='./asset/img/poster01.jpg' alt='image'></a><br>
+        <div class='vl_text'>
+          <a href='./video.html'class='vl_title'>Video Title</a><br>
+        </div>
+      </div><div class='vl_container vl1'>
+        <a href='./video.html'><img src='./asset/img/poster01.jpg' alt='image'></a><br>
+        <div class='vl_text'>
+          <a href='./video.html' class='vl_title'>Video Title</a><br>
+        </div>
+      </div>
+
+
+
+      </div>
+  </div>
+
+<div class='content_title'>
+  <a class='ct ct_1'>TRAILER</a>
+  <img src='./asset/img/indicator.png' alt='image'>
+</div>
+
+
+<div class='videoPreview_Container'>
+  <div class="vP_container_inside">
+      <div class='videoimg'>
+        <!--a class='ct ct_1'>Trailer</a-->
+        <img src='./asset/img/videoright.png' alt='image'>
+      </div>
+
+      <div class='videoimg'onclick="openVideo()">
+        <img src='./asset/img/videoright.png' alt='image'>
+      </div>
+
+      <div class='videoimg'>
+        <img src='./asset/img/videoright.png' alt='image'>
+      </div>
+  </div>
+
+</div>
+
+
+  <div class='content_title'>
+    <a class='ct ct_1'>COMING SOON</a>
+  </div>
+  <div class='time_line'>
+    <ul>
+      <li><a href='#' target="_blank">02/12</a></li>
+      <li><a href='#' target="_blank">02/12</a></li>
+      <li><a href='#' target="_blank">02/12</a></li>
+      <li><a href='#' target="_blank">02/12</a></li>
+      <li><a href='#' target="_blank">02/12</a></li>
+    </ul>
+  </div>
+  <div class='time_point1'>
+    <img src='./asset/img/time_point.png' alt='image'>
+  </div>
+<div class='title_soon'>
+  <div class='content_video_list01' id='cvl_4'>
+
+    <div class='vl_container2 vl1'>
+      <a href='./video.html'><img src='./asset/img/poster01.jpg' alt='image'></a><br>
+      <div class='vl_text'>
+        <a href='./video.html' class='vl_title'>Video Title</a><br>
+      </div>
+    </div>
+    <div class='vl_container2 vl1'>
+      <a href='./video.html'><img src='./asset/img/poster01.jpg' alt='image'></a><br>
+      <div class='vl_text'>
+        <a href='./video.html' class='vl_title'>Video Title</a><br>
+      </div>
+    </div>
+    <div class='vl_container2 vl1'>
+      <a href='./video.html'><img src='./asset/img/poster01.jpg' alt='image'></a><br>
+      <div class='vl_text'>
+        <a href='./video.html' class='vl_title'>Video Title</a><br>
+      </div>
+    </div>
+    <div class='vl_container2 vl1'>
+      <a href='./video.html'><img src='./asset/img/poster01.jpg' alt='image'></a><br>
+      <div class='vl_text'>
+        <a href='./video.html' class='vl_title'>Video Title</a><br>
+      </div>
+    </div>
+    <div class='vl_container2 vl1'>
+      <a href='./video.html'><img src='./asset/img/poster01.jpg' alt='image'></a><br>
+      <div class='vl_text'>
+        <a href='./video.html'class='vl_title'>Video Title</a><br>
+      </div>
+    </div>
+
+
+  </div>
+
+  <script src="./js/signin.js"></script>
+  <script src="./js/mobile.js"></script>
+  </div>
+</div>
+
+  <div class='dialog' id='dialog'>
+    <div class='dialog_close' id='dialogClose'><i class="fa fa-times" aria-hidden="true" onclick='closeDialog()'></i></div>
+    <div class='dialog_input' id='dialog_sign_input'>
+      <input type='text' id='username' value='Email' onfocus="if(value=='Email') value = ''" onblur="if(value=='') value = 'Email'"></input>
+      <input type='text' id='password' value='Password' onfocus="if(value=='Password') value = '', type='password'" onblur="if(value =='') value = 'Password', type='text'"></input>
+    </div>
+    <div class='dialog_term'>
+      <a>By creating an account, you agree with our </a><a href = '#' class='dialog_term_policy'>term and policy</a><a>.</a>
+    </div>
+
+    <div class='dialog_button'>
+      <button onclick="login()">Sign in or Create account</button>
+    </div>
+
+    <div class='dialog_iForgot'>
+      <a href='#'>I forgot my password</a>
+    </div>
+  </div>
+
+  <div class='dialogOverlay' id='dialogOverlay' onclick='closeDialog()'>
+    <a> </a>
+  </div>
+
+  <div class='alertOverlay' id='alertOverlay'>
+    <a id='alertContent'>Something wrong here.</a>
+  </div>
+
+  <div class='ticket_but1'>
+    <a href='./video.html'><img src = "./asset/img/ticket_but02.png"></a>
+  </div>
+
+  <div class="line01">
+
+    <img src = "./asset/img/footer_line.png">
+
+  </div>
+
+    <footer class='footer'>
+      <div class='f_container'>
+      <div class='footer_list'>
+
+        <div class='footer_socialNet'>
+          <a href='https://twitter.com/?lang=en'target="_blank"><img src='./asset/img/social_icon02.png' alt='logo'></a>
+          <a href='https://www.youtube.com/'target="_blank"><img src='./asset/img/social_icon03.png' alt='logo'></a>
+          <a href='https://en-gb.facebook.com/'target="_blank"><img src='./asset/img/social_icon04.png' alt='logo'></a>
+          <a href='https://plus.google.com/discover'target="_blank"><img src='./asset/img/social_icon05.png' alt='logo'></a>
+          <a href='https://www.instagram.com/?hl=en'target="_blank"><img src='./asset/img/social_icon06.png' alt='logo'></a>
+        </div>
+      </div>
+        <div class='contact'>
+          <ul>
+            <li><a href='#'>POPCORN 2017 All rights reserved</a></li>
+            <li></li>
+            <li><a href='./index.html'><img src='./asset/img/headLogo.png' alt='logo'></a></li>
+            <li></li>
+            <li><a href='#'>Customer service 020 8789 1436</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+
+</html>
