@@ -19,7 +19,10 @@ University of Portsmouth
     <link rel="stylesheet" type="text/css" href="./asset/css/video.css">
     <link rel="stylesheet" type="text/css" href="./asset/css/slider.css">
     <link rel="stylesheet" type="text/css" href="./asset/css/ticketbilling.css">
+    <link rel="stylesheet" type="text/css" href="asset/css/jquery.seat-charts.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/jquery.seat-charts.min.js"></script>
+    <script src="js/ticketbilling.js"></script>
     <link rel="icon" href="./asset/img/favicon1.png" type="image/gif" sizes="16x16">
 
 
@@ -54,7 +57,7 @@ University of Portsmouth
 <div class='vid_container' id="video_overlay_player">
     <div class='insideoverlay' onclick="openVideo()"><img src='./asset/img/overlay_exit.png' alt='logo'></div>
     <iframe width="1080" height="720" src="https://www.youtube.com/embed/52x5HJ9H8DM" frameborder="0"
-            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            allow="encrypted-media" allowfullscreen></iframe>
 </div>
 
 <nav class='navBar'>
@@ -135,9 +138,8 @@ University of Portsmouth
     </div>
 </div>
 
-<div class='cinema_seats'>
-
-
+<div class="seats">
+    <div id='cinema-seats'></div>
 </div>
 
 <div class='line_sep'>
